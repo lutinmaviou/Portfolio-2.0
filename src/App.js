@@ -3,12 +3,13 @@ import React, { Component } from "react";
 import "tailwindcss/tailwind.css";
 import "./App.css";
 import VinylContainer from "./Components/Vinyl-container/Vinyl.container";
+import Header from "./Components/Vinyl-container/Header/Header";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <VinylContainer />
+        <Header />
       </div>
     );
   }

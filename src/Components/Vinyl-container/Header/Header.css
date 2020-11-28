@@ -1,0 +1,117 @@
+@font-face{
+  font-family: "Laffriot";
+  src: url('../../../assets/fonts/laffriotnf/LaffRiotNF.ttf');
+  /* src: url('../../../assets/fonts/rialto/RialtoNF.ttf'); */
+  /* src: url('../../../assets/fonts/guanine/guanine.ttf'); */
+}
+
+@font-face{
+  font-family: "Rialto";
+  /* src: url('../../../assets/fonts/laffriotnf/LaffRiotNF.ttf'); */
+  src: url('../../../assets/fonts/rialto/RialtoNF.ttf');
+  /* src: url('../../../assets/fonts/guanine/guanine.ttf'); */
+}
+
+@font-face{
+  font-family: "Guanine";
+  /* src: url('../../../assets/fonts/laffriotnf/LaffRiotNF.ttf'); */
+  /* src: url('../../../assets/fonts/rialto/RialtoNF.ttf'); */
+  src: url('../../../assets/fonts/guanine/guanine.ttf');
+}
+
+@font-face{
+  font-family: "Ironick";
+  /* src: url('../../../assets/fonts/laffriotnf/LaffRiotNF.ttf'); */
+  /* src: url('../../../assets/fonts/rialto/RialtoNF.ttf'); */
+  src: url('../../../assets/fonts/ironick-normal/IronickNF.ttf');
+}
+
+header {
+  font-family: "Laffriot";
+  background-image: url("../../../assets/img/wood-wallpaper.PNG");
+  background-size: cover;
+  height: 100vh;
+  perspective: 800px;
+}
+
+h1{
+  font-family: "Rialto";
+  font-size: 5rem;
+  font-stretch: 200%;
+  color: rgb(40, 152, 156);
+  text-shadow: 2px 2px 2px aliceblue;
+}
+
+p{
+  font-family: "Ironick";
+  font-size: 2rem;
+  color: rgb(44, 105, 107);
+}
+
+/* #devant {
+  width: 80px;
+  height: 30px;
+  position: relative;
+  top: -25px;
+  left: 80px;
+  border: 2px solid #444;
+  text-align: center;
+  font-size: 1rem;
+  transition: 0.5s;
+  backface-visibility: hidden;
+  color: white;
+  z-index: 100;
+  background-color: #1e9079;
+  transform: rotateX(60deg);
+} */
+
+#home,
+#portfolio,
+#contact {
+  width: 80px;
+  text-align: center;
+  position: relative;
+  transform: rotateY(-50deg);
+  transform: rotateX(-50deg);
+  color: rgb(104, 104, 104);
+}
+
+#home {
+  top: -20px;
+  left: 100px;
+}
+
+#portfolio {
+  top: -70px;
+  left: 225px;
+}
+
+#contact {
+  top: -53px;
+  left: 370px;
+}
+
+#home:hover,
+#portfolio:hover,
+#contact:hover {
+  cursor: pointer;
+  transform: rotateY(0deg);
+  font-weight: 500;
+  color: rgb(63, 63, 63);
+}
+
+#plane-container {
+  padding-top: 1rem;
+}
+
+#biplan {
+  width: 150px;
+  height: 75px;
+}
+
+#banner {
+  width: 500px;
+  height: 50px;
+  position: relative;
+  top: 11px;
+}
