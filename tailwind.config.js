@@ -5,6 +5,9 @@ module.exports = {
       screens: {
         xs: { max: "400px" },
       },
+      backgroundImage: (theme) => ({
+        "banner": "url('/src/assets/img/banner2.png')",
+      }),
     },
   },
 };

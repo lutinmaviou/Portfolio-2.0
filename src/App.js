@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "tailwindcss/tailwind.css";
 import "./App.css";
 import VinylContainer from "./Components/Vinyl-container/Vinyl.container";
-import Header from "./Components/Vinyl-container/Header/Header";
+import Header from "./Components/Header/Header";
 
 class App extends Component {
   render() {
