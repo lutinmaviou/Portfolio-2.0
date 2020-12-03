@@ -1,54 +1,12 @@
-@font-face{
-  font-family: "Laffriot";
-  src: url('../../assets/fonts/laffriotnf/LaffRiotNF.ttf');
-  /* src: url('../../../assets/fonts/rialto/RialtoNF.ttf'); */
-  /* src: url('../../../assets/fonts/guanine/guanine.ttf'); */
-}
-
-@font-face{
-  font-family: "Rialto";
-  /* src: url('../../../assets/fonts/laffriotnf/LaffRiotNF.ttf'); */
-  src: url('../../assets/fonts/rialto/RialtoNF.ttf');
-  /* src: url('../../../assets/fonts/guanine/guanine.ttf'); */
-}
-
-@font-face{
-  font-family: "Guanine";
-  /* src: url('../../../assets/fonts/laffriotnf/LaffRiotNF.ttf'); */
-  /* src: url('../../../assets/fonts/rialto/RialtoNF.ttf'); */
-  src: url('../../assets/fonts/guanine/guanine.ttf');
-}
-
-@font-face{
-  font-family: "Ironick";
-  /* src: url('../../../assets/fonts/laffriotnf/LaffRiotNF.ttf'); */
-  /* src: url('../../../assets/fonts/rialto/RialtoNF.ttf'); */
-  src: url('../../assets/fonts/ironick-normal/IronickNF.ttf');
-}
-
 header {
   font-family: "Laffriot";
-  background-image: url("../../assets/img/wood-wallpaper.PNG");
+  background-image: url("../../assets/img/fond.png");
   background-size: cover;
   height: 100vh;
   perspective: 800px;
 }
 
-h1{
-  font-family: "Rialto";
-  font-size: 5rem;
-  font-stretch: 200%;
-  color: rgb(40, 152, 156);
-  text-shadow: 2px 2px 2px aliceblue;
-}
-
-p{
-  font-family: "Ironick";
-  font-size: 2rem;
-  color: rgb(44, 105, 107);
-}
-
-#nav{
+#nav {
   position: relative;
   top: -40px;
   left: 15%;
@@ -57,7 +15,7 @@ p{
 #about,
 #portfolio,
 #contact {
-  transform: rotateX(25deg);
+  transform: rotateX(45deg);
   color: rgb(104, 104, 104);
 }
 
@@ -85,4 +43,59 @@ p{
   height: 80px;
   position: relative;
   top: 9px;
+}
+
+#presentation {
+  margin-top: 15rem;
+  margin-left: 15rem;
+}
+
+h1 {
+  font-family: "Rialto";
+  font-size: 10rem;
+  color: rgb(40, 152, 156);
+  text-shadow: 4px 4px 3px aliceblue;
+  margin-left: 4rem;
+}
+
+p {
+  font-family: "Ironick";
+  font-size: 3rem;
+  color: rgb(44, 105, 107);
+}
+
+.point {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
+}
+
+#jukebox {
+  width: 500px;
+  margin-right: 15rem;
+}
+
+.jukeBox:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
 }
