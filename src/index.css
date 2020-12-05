@@ -5,28 +5,20 @@
 @font-face {
   font-family: "Laffriot";
   src: url("./assets/fonts/laffriotnf/LaffRiotNF.ttf");
-  /* src: url('../../../assets/fonts/rialto/RialtoNF.ttf'); */
-  /* src: url('../../../assets/fonts/guanine/guanine.ttf'); */
 }
 
 @font-face {
   font-family: "Rialto";
-  /* src: url('../../../assets/fonts/laffriotnf/LaffRiotNF.ttf'); */
   src: url("./assets/fonts/rialto/RialtoNF.ttf");
-  /* src: url('../../../assets/fonts/guanine/guanine.ttf'); */
 }
 
 @font-face {
   font-family: "Guanine";
-  /* src: url('../../../assets/fonts/laffriotnf/LaffRiotNF.ttf'); */
-  /* src: url('../../../assets/fonts/rialto/RialtoNF.ttf'); */
   src: url("./assets/fonts/guanine/guanine.ttf");
 }
 
 @font-face {
   font-family: "Ironick";
-  /* src: url('../../../assets/fonts/laffriotnf/LaffRiotNF.ttf'); */
-  /* src: url('../../../assets/fonts/rialto/RialtoNF.ttf'); */
   src: url("./assets/fonts/ironick-normal/IronickNF.ttf");
 }
 

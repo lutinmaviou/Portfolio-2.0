@@ -1,0 +1,70 @@
+#flying-plane {
+  animation: planeShake 2s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  margin-top: -250px;
+}
+
+#nav {
+  font-family: "Laffriot";
+  position: relative;
+  top: -40px;
+  left: 15%;
+}
+
+#about,
+#portfolio,
+#contact {
+  transform: rotateX(45deg);
+  color: rgb(104, 104, 104);
+}
+
+#about:hover,
+#portfolio:hover,
+#contact:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  transform: rotateX(1deg);
+  font-weight: 500;
+  color: rgb(63, 63, 63);
+}
+
+#plane-container {
+  padding-top: 1.5rem;
+}
+
+#biplan {
+  width: 230px;
+  height: 100px;
+}
+
+#banner {
+  width: 900px;
+  height: 80px;
+  position: relative;
+  top: 9px;
+}
+
+@keyframes planeShake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 1px, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-1px, -1px, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(1px, 0, 0);
+  }
+}
