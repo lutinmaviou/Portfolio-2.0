@@ -1,8 +1,53 @@
-#welcome{
-    font-family: "Laffriot";
-    background-image: url("../../../assets/img/back.png");
-    margin-top: -25px;
-    background-size: cover;
-    height: 100vh;
-    perspective: 800px;
+#welcome {
+  font-family: "Laffriot";
+  background-image: url("../../../assets/img/back.png");
+  margin-top: -25px;
+  background-size: cover;
+  height: 100vh;
+  perspective: 800px;
+}
+
+#presentation {
+}
+
+h1 {
+  font-family: "Rialto";
+  font-size: 10rem;
+  color: rgb(40, 152, 156);
+  text-shadow: 4px 4px 3px aliceblue;
+}
+
+.point {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
+}
+
+#jukebox-wrapper {
+  margin-right: 10rem;
+}
+
+#shadow {
+  border-radius: 6px;
+  width: 99px;
+  box-shadow: 0 5px #706a5f;
+}
+
+#contour {
+  border-radius: 6px;
+  width: 99px;
+  border: 2px solid white;
+}
+
+#play {
+  background-color: #f0b341;
+  border: 2px solid #333;
+  border-radius: 5px;
+  width: 95px;
+  padding: 10px;
+  outline: none;
+}
+
+#contour:active {
+  transform: translateY(4px);
 }
