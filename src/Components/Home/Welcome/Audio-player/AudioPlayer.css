@@ -1,0 +1,33 @@
+#player {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 6px solid rgba(255, 255, 255, 0.739);
+    border-radius: 14px;
+    outline: none;
+  }
+  
+  .rhap-container,
+  .rhap-container *:focus {
+    outline: none;
+  }
+  
+  .rhap_container {
+    background-color: rgba(68, 0, 0, 0.575);
+    border-radius: 10px;
+  }
+  
+  .rhap_time{
+    color:  #ffe5b6;
+  }
+  
+  .rhap_download-progress, .rhap_volume-bar{
+    background-color: #ffe5b6;
+  }
+  
+  .rhap_container svg {
+    color: #f0b341;
+  }
+  
+  .rhap_progress-indicator, .rhap_volume-indicator{
+    background-color: #f0b341;
+  }

@@ -21,7 +21,7 @@ const PlaneNav = () => {
               <div id="portfolio" className="-mt-2">
                 PORTFOLIO
               </div>
-              <div id="contact" className="-mt-4">
+              <div id="contact" className="-mt-5">
                 CONTACT
               </div>
             </nav>
