@@ -26,6 +26,14 @@ class Presentation extends Component {
         }
       }, 50);
     }, 2000);
+    setTimeout(() => {
+      const div = document.getElementById("intro-text");
+      const span = document.createElement('span');
+      span.setAttribute('id', 'prout');
+      span.setAttribute('class', 'point');
+      div.appendChild(span);
+      document.getElementById("prout").innerHTML = ".";
+    }, 4650);
   };
 
   componentDidMount() {
@@ -34,9 +42,11 @@ class Presentation extends Component {
 
   render() {
     return (
-      <div id="intro-text">
-        <h2></h2>
-      </div>
+      <>
+        <div>
+          <p className="mt-10 ml-3" id="intro-text"></p>
+        </div>
+      </>
     );
   }
 }

@@ -4,3 +4,9 @@
     color: rgb(44, 105, 107);
     width: 600px;
   }
+  
+.point {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
+}

@@ -3,7 +3,7 @@
   background-image: url("../../../assets/img/background.png");
   margin-top: -35px;
   background-size: cover;
-  height: 100vh;
+  height: 89vh;
   perspective: 800px;
   position: absolute;
   width: 100%;
@@ -15,12 +15,6 @@ h1 {
   font-size: 10rem;
   color: rgb(40, 152, 156);
   text-shadow: 4px 4px 3px aliceblue;
-}
-
-.point {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 2rem;
 }
 
 #jukebox-wrapper {

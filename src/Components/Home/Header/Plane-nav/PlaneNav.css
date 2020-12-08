@@ -3,7 +3,9 @@
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
-  margin-top: -250px;
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 
 #nav {
