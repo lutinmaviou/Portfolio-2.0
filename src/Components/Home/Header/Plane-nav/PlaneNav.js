@@ -1,6 +1,7 @@
 import './PlaneNav.css';
-import Plane from "../../../../assets/img/biplan.png";
+import Plane from "../../../../assets/img/plane-without-propeller.png";
 import Banner from "../../../../assets/img/banner2.png";
+import Propeller from "../../../../assets/img/propeller.png";
 import Fade from "react-reveal/Fade";
 
 const PlaneNav = () => {
@@ -8,6 +9,7 @@ const PlaneNav = () => {
     <div id="flying-plane">
       <Fade right big>
         <div id="plane-container" className="flex justify-center">
+          <img src={Propeller} alt="Hélice d'avion" id="propeller"/>
           <img src={Plane} alt="Biplan" id="biplan" />
           <div>
             <img src={Banner} alt="Bannière" id="banner" />

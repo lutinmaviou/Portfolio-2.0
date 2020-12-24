@@ -22,6 +22,11 @@
   src: url("./assets/fonts/ironick-normal/IronickNF.ttf");
 }
 
+@font-face {
+  font-family: "OldNewspaper";
+  src: url("./assets/fonts/old_newspaper_types/OldNewspaperTypes.ttf");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
