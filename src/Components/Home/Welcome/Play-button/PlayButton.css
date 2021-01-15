@@ -1,0 +1,22 @@
+#shadow {
+    border-radius: 6px;
+    width: 99px;
+    box-shadow: 0 5px #706a5f;
+    animation: scale 3s infinite;
+  }
+  
+  #contour {
+    border-radius: 6px;
+    width: 99px;
+    border: 2px solid white;
+  }
+  
+  #play {
+    background-color: #f0b341;
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 95px;
+    padding: 10px;
+    outline: none;
+  }
+  

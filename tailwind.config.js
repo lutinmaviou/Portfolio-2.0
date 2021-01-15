@@ -22,9 +22,6 @@ module.exports = {
         "9xl": "8rem",
         "10xl": "10rem",
       },
-      backgroundImage: (theme) => ({
-        banner: "url('/src/assets/img/banner2.png')",
-      }),
     },
   },
 };

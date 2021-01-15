@@ -43,7 +43,7 @@
 
 #propeller{
   height: 90px;
-  animation: helice 0.01s infinite;
+  animation: vertical-propeller 0.01s infinite;
 }
 
 #banner {
@@ -76,7 +76,7 @@
   }
 }
 
-@keyframes helice {
+@keyframes vertical-propeller {
   10% {
     transform: rotateX(36deg);
   }

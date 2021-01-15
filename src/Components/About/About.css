@@ -1,0 +1,65 @@
+#about-container{
+    /* background-color: #82B4B3; */
+    background-color: #8cd8d4;
+    background-image: url("../../assets/img/cartographer.png");
+}
+
+#byplane-new{
+    width: 100px;
+    height: 100px;
+    transform: rotateZ(180deg);
+}
+
+#horizontal-propeller{
+    width: 50px;
+    animation: horizontal-propeller 0.01s infinite;
+}
+
+.vertical-plane-banner{
+    height: 500px;
+}
+
+#test{
+    font-family: "LouisaCP";
+    font-size: 5rem;
+}
+
+#newspaper{
+  border: 2px solid black;
+  height: 80vh;
+  /* background-image: url('../../assets/img/toto.png');
+  background-size: contain; */
+}
+
+@keyframes horizontal-propeller {
+    10% {
+      transform: rotateY(36deg);
+    }
+    20% {
+      transform: rotateY(72deg);
+    }
+    30% {
+      transform: rotateY(108deg);
+    }
+    40% {
+      transform: rotateY(144deg);
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    60% {
+      transform: rotateY(216deg);
+    }
+    70% {
+      transform: rotateY(252deg);
+    }
+    80% {
+      transform: rotateY(288deg);
+    }
+    90% {
+      transform: rotateY(324deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
