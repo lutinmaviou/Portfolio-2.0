@@ -7,17 +7,46 @@ import "react-h5-audio-player/lib/styles.css";
 import "./Welcome.css";
 import AudioPlayer from "./Audio-player/AudioPlayer";
 import PlayButton from "./Play-button/PlayButton";
+import { queryByTestId } from "@testing-library/react";
 
 class Welcome extends Component {
   constructor(props) {
     super(props);
     this.state = {
       displayAudioPlayer: false,
+      handleShakeJukebox: false,
     };
   }
 
   handleDisplayAudioPlayer = () => {
-    this.setState({ displayAudioPlayer: true });
+    const jukebox = document.getElementById("jukebox");
+    this.setState(
+      { displayAudioPlayer: true, handleShakeJukebox: true },
+      () => {
+        if (this.state.handleShakeJukebox === true) {
+          jukebox.style.animationPlayState = "running";
+        }
+        console.log(this.state.handleShakeJukebox);
+      }
+    );
+  };
+
+  playShakeJukebox = (e) => {
+    const jukebox = document.getElementById("jukebox");
+    this.setState({ handleShakeJukebox: true }, () => {
+      if (this.state.handleShakeJukebox === true) {
+        jukebox.style.animationPlayState = "running";
+      }
+    });
+  };
+
+  pauseShakeJukebox = (e) => {
+    const jukebox = document.getElementById("jukebox");
+    this.setState({ handleShakeJukebox: false }, () => {
+      if (this.state.handleShakeJukebox === false) {
+        jukebox.style.animationPlayState = "paused";
+      }
+    });
   };
 
   render() {
@@ -33,18 +62,22 @@ class Welcome extends Component {
                 <Presentation text="My name is Bertrand, I'm a Web and Mobile Developer" />
               </Fade>
             </div>
-            {console.log(this.state)}
             <div id="jukebox-wrapper" className="flex flex-col items-center">
               <Jukebox />
               {this.state.displayAudioPlayer === false ? (
                 <>
-                  <span className="ironick text-4xl">Pour une navigation en musique :</span>
+                  <span className="ironick text-4xl">
+                    Pour une navigation en musique :
+                  </span>
                   <PlayButton
                     handleDisplayAudioPlayer={this.handleDisplayAudioPlayer}
                   />
                 </>
               ) : (
-                <AudioPlayer />
+                <AudioPlayer
+                  pauseShakeJukebox={this.pauseShakeJukebox}
+                  playShakeJukebox={this.playShakeJukebox}
+                />
               )}
             </div>
           </div>
