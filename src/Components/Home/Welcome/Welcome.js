@@ -2,49 +2,47 @@ import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import LightSpeed from "react-reveal/LightSpeed";
 import Presentation from "./Presentation/Presentation";
-import Jukebox from "./Jukebox/Jukebox";
+import Radio from "./Radio/Radio";
+import Window from "./Window/Window";
 import "react-h5-audio-player/lib/styles.css";
 import "./Welcome.css";
 import AudioPlayer from "./Audio-player/AudioPlayer";
 import PlayButton from "./Play-button/PlayButton";
-import { queryByTestId } from "@testing-library/react";
+import Shelf from "./Shelf/Shelf";
+import MusicFrame from "./Music-frame/MusicFrame";
 
 class Welcome extends Component {
   constructor(props) {
     super(props);
     this.state = {
       displayAudioPlayer: false,
-      handleShakeJukebox: false,
+      shakeRadio: false,
     };
   }
 
   handleDisplayAudioPlayer = () => {
-    const jukebox = document.getElementById("jukebox");
-    this.setState(
-      { displayAudioPlayer: true, handleShakeJukebox: true },
-      () => {
-        if (this.state.handleShakeJukebox === true) {
-          jukebox.style.animationPlayState = "running";
-        }
-        console.log(this.state.handleShakeJukebox);
-      }
-    );
-  };
-
-  playShakeJukebox = (e) => {
-    const jukebox = document.getElementById("jukebox");
-    this.setState({ handleShakeJukebox: true }, () => {
-      if (this.state.handleShakeJukebox === true) {
-        jukebox.style.animationPlayState = "running";
+    const radio = document.getElementById("radio");
+    this.setState({ displayAudioPlayer: true, shakeRadio: true }, () => {
+      if (this.state.shakeRadio === true) {
+        radio.style.animationPlayState = "running";
       }
     });
   };
 
-  pauseShakeJukebox = (e) => {
-    const jukebox = document.getElementById("jukebox");
-    this.setState({ handleShakeJukebox: false }, () => {
-      if (this.state.handleShakeJukebox === false) {
-        jukebox.style.animationPlayState = "paused";
+  pauseShakeRadio = (e) => {
+    const radio = document.getElementById("radio");
+    this.setState({ shakeRadio: false }, () => {
+      if (this.state.shakeRadio === false) {
+        radio.style.animationPlayState = "paused";
+      }
+    });
+  };
+
+  playShakeRadio = (e) => {
+    const radio = document.getElementById("radio");
+    this.setState({ shakeRadio: true }, () => {
+      if (this.state.shakeRadio === true) {
+        radio.style.animationPlayState = "running";
       }
     });
   };
@@ -62,23 +60,41 @@ class Welcome extends Component {
                 <Presentation text="My name is Bertrand, I'm a Web and Mobile Developer" />
               </Fade>
             </div>
-            <div id="jukebox-wrapper" className="flex flex-col items-center">
-              <Jukebox />
+            <div className="flex flex-col -mt-10">
+              <Window />
+              <Shelf />
+              <div className="flex justify-around -mt-56">
+                <Radio />
+                <MusicFrame />
+              </div>
               {this.state.displayAudioPlayer === false ? (
-                <>
-                  <span className="ironick text-4xl">
-                    Pour une navigation en musique :
-                  </span>
-                  <PlayButton
-                    handleDisplayAudioPlayer={this.handleDisplayAudioPlayer}
-                  />
-                </>
+                <PlayButton
+                  handleDisplayAudioPlayer={this.handleDisplayAudioPlayer}
+                />
               ) : (
                 <AudioPlayer
-                  pauseShakeJukebox={this.pauseShakeJukebox}
-                  playShakeJukebox={this.playShakeJukebox}
+                  pauseShakeRadio={this.pauseShakeRadio}
+                  playShakeRadio={this.playShakeRadio}
                 />
               )}
+              {/* <div id="radio-wrapper" className="flex flex-col items-center">
+                <Radio />
+                {this.state.displayAudioPlayer === false ? (
+                  <>
+                    <span className="ironick text-4xl">
+                      Pour une navigation en musique :
+                    </span>
+                    <PlayButton
+                      handleDisplayAudioPlayer={this.handleDisplayAudioPlayer}
+                    />
+                  </>
+                ) : (
+                  <AudioPlayer
+                    pauseShakeradio={this.pauseShakeradio}
+                    playShakeradio={this.playShakeradio}
+                  />
+                )}
+              </div> */}
             </div>
           </div>
         </section>

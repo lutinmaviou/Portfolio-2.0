@@ -4,7 +4,7 @@ import RHAP from "react-h5-audio-player";
 
 const AudioPlayer = (props) => {
   return (
-    <div id="player" className="mt-8">
+    <div id="player" className="mt-4">
       <RHAP
         id="toto"
         src={Music}
@@ -12,8 +12,8 @@ const AudioPlayer = (props) => {
         loop
         autoPlay={true}
         volume={0.1}
-        onPause={props.pauseShakeJukebox}
-        onPlay={props.playShakeJukebox}
+        onPause={props.pauseShakeRadio}
+        onPlay={props.playShakeRadio}
       />
     </div>
   );

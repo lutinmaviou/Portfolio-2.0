@@ -3,10 +3,10 @@
   background-image: url("../../../assets/img/background.png");
   margin-top: -35px;
   background-size: cover;
-  height: 89vh;
   perspective: 800px;
   position: absolute;
   width: 100%;
+  height: 89vh;
   top: 150px;
 }
 
@@ -17,7 +17,7 @@ h1 {
   text-shadow: 4px 4px 3px aliceblue;
 }
 
-#jukebox-wrapper {
+#radio-wrapper {
   margin-right: 10rem;
 }
 
