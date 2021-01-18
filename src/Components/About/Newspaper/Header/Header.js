@@ -1,4 +1,4 @@
-import './Header.css';
+import "./Header.css";
 import FingerLeft from "../../../../assets/img/finger-left.png";
 import FingerRight from "../../../../assets/img/finger-right.png";
 
@@ -20,7 +20,7 @@ const Header = () => {
           className="finger"
         />
       </div>
-      <div className="flex justify-around text-2xl border-black border-t-2 border-b-2 old-newspaper">
+      <div className="flex justify-around text-2xl border-black border-t-2 border-b-2 old-newspaper -ml-4 -mt-2">
         <span>12/12/12</span>
         <span>SPECIAL EDITION</span>
         <span>N°1</span>

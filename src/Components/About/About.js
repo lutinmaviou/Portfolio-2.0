@@ -12,7 +12,11 @@ const About = () => {
         <img src={Byplane} alt="" id="byplane-new" />
         <img src={Propeller} alt="" id="horizontal-propeller" />
       </div>
-      <Newspaper />
+      <div className="flex flex-col">
+        <Newspaper rotate="-rotate-3"/>
+        <Newspaper top="100"/>
+        <Newspaper top="200" rotate="rotate-3"/>
+      </div>
     </div>
   );
 };

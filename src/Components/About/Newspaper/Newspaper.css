@@ -2,6 +2,6 @@
   position: relative;
 }
 
-/* #paper {
-  transform: rotateZ(3.5deg);
-} */
+#newspaper-container:hover {
+  transform: rotateZ(0deg);
+}

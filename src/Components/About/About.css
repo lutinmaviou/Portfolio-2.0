@@ -1,6 +1,7 @@
 #about-container {
   background: url("../../assets/img/back-test.png"),
     linear-gradient(#aaaaaa, #1d1d1d);
+    height: 114vh;
 }
 
 #byplane-new {
