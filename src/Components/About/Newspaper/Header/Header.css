@@ -1,0 +1,17 @@
+#title-container {
+  width: 80%;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%) /*  rotateZ(-3.5deg) */;
+}
+
+#title {
+  font-size: 7rem;
+}
+
+.finger {
+  width: 150px;
+  height: 60px;
+  margin-top: 6rem;
+}

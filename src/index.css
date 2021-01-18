@@ -47,18 +47,26 @@ code {
     monospace;
 }
 
-.guanine{
+.guanine {
   font-family: "Guanine";
 }
 
-.ironick{
-  font-family: "ironick";
+.ironick {
+  font-family: "Ironick";
 }
 
-.rialto{
-  font-family: "rialto";
+.rialto {
+  font-family: "Rialto";
 }
 
-.laffriot{
-  font-family: "laffriot";
+.laffriot {
+  font-family: "Laffriot";
+}
+
+.louisa-cp {
+  font-family: "LouisaCP";
+}
+
+.old-newspaper {
+  font-family: "OldNewspaper";
 }

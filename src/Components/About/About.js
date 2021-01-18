@@ -2,7 +2,7 @@ import "./About.css";
 import Byplane from "../../assets/img/byplane-vertical.png";
 import Propeller from "../../assets/img/horizontal-propeller.png";
 import Banner from "../../assets/img/vertical-plane-banner.png";
-import TV from "../../assets/img/tv.png";
+import Newspaper from "./Newspaper/Newspaper";
 
 const About = () => {
   return (
@@ -12,9 +12,7 @@ const About = () => {
         <img src={Byplane} alt="" id="byplane-new" />
         <img src={Propeller} alt="" id="horizontal-propeller" />
       </div>
-      <div className="w-3/4 mt-24 mb-24 bg-yellow-200" id="newspaper">
-        <p id="test">The Story Of My Life</p>
-      </div>
+      <Newspaper />
     </div>
   );
 };
