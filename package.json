@@ -11,6 +11,7 @@
     "postcss": "^8.1.10",
     "postcss-nested": "^5.0.1",
     "react": "^17.0.1",
+    "react-animations": "^1.0.0",
     "react-audio-player": "^0.14.0",
     "react-dom": "^17.0.1",
     "react-h5-audio-player": "^3.5.0",

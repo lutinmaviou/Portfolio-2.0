@@ -2,6 +2,27 @@
   position: relative;
 }
 
-#newspaper-container:hover {
-  transform: rotateZ(0deg);
+.page-1,
+.page-2,
+.page-3 {
+  transform-origin: top left;
+  animation: hinge 0.7s ease-in-out paused;
+}
+
+#buttons {
+  position: relative;
+  top: -10rem;
+}
+
+@keyframes hinge {
+  30%,
+  70% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: translateY(80rem);
+  }
 }

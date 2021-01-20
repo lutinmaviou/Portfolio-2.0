@@ -1,28 +1,28 @@
 import "./Header.css";
-import FingerLeft from "../../../../assets/img/finger-left.png";
-import FingerRight from "../../../../assets/img/finger-right.png";
+import Paparazzi from "../../../../assets/img/paparazzi.png";
+import LimitedEdition from "../../../../assets/img/limited-edition.png";
 
 const Header = () => {
   return (
-    <div id="title-container" className="flex flex-col justify-center">
-      <div className="flex justify-around">
+    <div id="title-container" className="flex flex-col mt-4">
+      <div className="flex justify-between">
         <img
-          src={FingerLeft}
-          alt="Doigt pointé vers la droite"
-          className="finger"
+          src={Paparazzi}
+          alt="Paparazzi"
+          className="logo mt-6"
         />
-        <p id="title" className="text-center mt-8 louisa-cp">
+        <p id="title" className="text-center mt-2 -ml-8 louisa-cp">
           The Story
         </p>
         <img
-          src={FingerRight}
-          alt="Doigt pointé vers la gauche"
-          className="finger"
+          src={LimitedEdition}
+          alt="Paparazzi"
+          className="logo mt-8"
         />
       </div>
-      <div className="flex justify-around text-2xl border-black border-t-2 border-b-2 old-newspaper -ml-4 -mt-2">
-        <span>12/12/12</span>
-        <span>SPECIAL EDITION</span>
+      <div className="flex justify-around text-2xl border-black border-t-2 border-b-2 old-newspaper -mt-2">
+        <span>6201Z</span>
+        <span className="ml-2">Mercredi 20 janvier 2021</span>
         <span>N°1</span>
       </div>
     </div>
