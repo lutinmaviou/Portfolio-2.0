@@ -11,7 +11,22 @@
 
 #buttons {
   position: relative;
-  top: -10rem;
+}
+
+#buttons:hover {
+  cursor: pointer;
+}
+
+#right-finger {
+  margin-left: 66rem;
+}
+
+.right-finger {
+  animation: signal-right 1s ease-in-out infinite;
+}
+
+.left-finger {
+  animation: signal-left 1s ease-in-out infinite;
 }
 
 @keyframes hinge {
@@ -24,5 +39,23 @@
   }
   100% {
     transform: translateY(80rem);
+  }
+}
+
+@keyframes signal-right {
+  50% {
+    transform: translateX(-0.5rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes signal-left {
+  50% {
+    transform: translateX(0.5rem);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

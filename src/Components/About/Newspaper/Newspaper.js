@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./Newspaper.css";
 import Paper from "../../../assets/img/old-paper.png";
 import Header from "./Header/Header";
+import LeftFinger from "../../../assets/img/finger-left.png";
+import RightFinger from "../../../assets/img/finger-right.png";
 
 class Newspaper extends Component {
   constructor(props) {
@@ -34,7 +36,7 @@ class Newspaper extends Component {
     const previousPageNb = this.props.pageNb - 1;
     const previousPage = document.querySelector(`.page-${previousPageNb}`);
     previousPage.style.animationPlayState = "paused";
-    previousPage.style.display = 'block';
+    previousPage.style.display = "block";
   };
 
   render() {
@@ -45,16 +47,37 @@ class Newspaper extends Component {
       >
         <img src={Paper} alt="Vieux journal" />
         <Header />
-        <div id="buttons" className="text-red-600 text-5xl flex justify-around">
+        <div id="buttons" className="text-red-600 text-5xl -top-24">
           {!this.state.firstPage && !this.state.lastPage ? (
-            <>
-              <button onClick={this.previousPage}>Previous</button>
-              <button onClick={this.nextPage}>Next</button>
-            </>
+            <div className="flex justify-between">
+              <img
+                src={RightFinger}
+                alt="Doigt pointé vers la gauche"
+                onClick={this.previousPage}
+                className="ml-12 left-finger"
+              />
+              <img
+                src={LeftFinger}
+                alt="Doigt pointé vers la droite"
+                onClick={this.nextPage}
+                className="mr-12 right-finger"
+              />
+            </div>
           ) : this.state.firstPage ? (
-            <button onClick={this.nextPage}>Next</button>
+            <img
+              src={LeftFinger}
+              alt="Doigt pointé vers la droite"
+              onClick={this.nextPage}
+              id="right-finger"
+              className="right-finger"
+            />
           ) : (
-            <button onClick={this.previousPage}>Previous</button>
+            <img
+              src={RightFinger}
+              alt="Doigt pointé vers la gauche"
+              onClick={this.previousPage}
+              className="ml-12 left-finger"
+            />
           )}
         </div>
       </div>
