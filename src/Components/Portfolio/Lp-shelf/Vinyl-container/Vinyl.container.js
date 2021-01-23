@@ -1,17 +1,17 @@
 import "./Vinyl.container.css";
 import Vinyl from "./Vinyl-item/Vinyl.item";
 import Cover from "./Vinyl-cover/Vinyl.cover";
-import SunsetCover from "../../assets/img/sunset.png";
-import LpSunset from "../../assets/img/lp-sunset.png";
+import LpSunset from "../../../../assets/img/lp-sunset.png";
 
-const VinylContainer = () => {
+const VinylContainer = (props) => {
+  console.log(props.alt);
   const NAME = "Disque vinyle";
   return (
     <>
-      <div id="disque" className="flex items-center">
+      <div id="lp-cover" className={`flex items-center top-${props.top} left-${props.left}`}>
         <Cover
-          src={SunsetCover}
-          alt="Coucher de soleil" />
+          src={props.src}
+          alt={props.alt} />
         <Vinyl
           src={LpSunset}
           alt={NAME} />

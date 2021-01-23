@@ -1,7 +1,7 @@
-import "./PlaneNav.css";
-import Plane from "../../../../assets/img/plane-without-propeller.png";
-import Banner from "../../../../assets/img/plane-banner.png";
-import Propeller from "../../../../assets/img/propeller.png";
+import "./HorizontalPlaneNav.css";
+import Plane from "../../assets/img/plane-without-propeller.png";
+import Banner from "../../assets/img/plane-banner.png";
+import Propeller from "../../assets/img/propeller.png";
 import Fade from "react-reveal/Fade";
 
 const PlaneNav = () => {
@@ -21,7 +21,7 @@ const PlaneNav = () => {
                 <a href="#about-container"> À PROPOS</a>
               </div>
               <div id="portfolio" className="-mt-2">
-                PORTFOLIO
+                <a href="#portfolio-container">PORTFOLIO</a>
               </div>
               <div id="contact" className="-mt-5">
                 CONTACT

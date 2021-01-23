@@ -1,0 +1,9 @@
+#portfolio-container {
+  background-image: url("../../assets/img/wood-wallpaper.PNG");
+  background-size: cover;
+  height: 120vh;
+}
+
+#lp-shelf{
+    width: 900px;
+}

@@ -4,21 +4,6 @@
     height: 114vh;
 }
 
-#byplane-new {
-  width: 100px;
-  height: 100px;
-  transform: rotateZ(180deg);
-}
-
-#horizontal-propeller {
-  width: 50px;
-  animation: horizontal-propeller 0.01s infinite;
-}
-
-.vertical-plane-banner {
-  height: 500px;
-}
-
 @keyframes horizontal-propeller {
   10% {
     transform: rotateY(36deg);

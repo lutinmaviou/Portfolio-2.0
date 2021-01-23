@@ -3,7 +3,7 @@ import "tailwindcss/tailwind.css";
 import "./App.css";
 import About from "./Components/About/About";
 import Home from "./Components/Home/Home";
-import VinylContainer from "./Components/Vinyl-container/Vinyl.container";
+import Portfolio from "./Components/Portfolio/Portfolio";
 
 class App extends Component {
   render() {
@@ -11,6 +11,7 @@ class App extends Component {
       <div>
         <Home />
         <About />
+        <Portfolio />
       </div>
     );
   }
