@@ -1,10 +1,8 @@
 import "./Vinyl.container.css";
 import Vinyl from "./Vinyl-item/Vinyl.item";
 import Cover from "./Vinyl-cover/Vinyl.cover";
-import LpSunset from "../../../../assets/img/lp-sunset.png";
 
 const VinylContainer = (props) => {
-  console.log(props.alt);
   const NAME = "Disque vinyle";
   return (
     <>
@@ -13,8 +11,10 @@ const VinylContainer = (props) => {
           src={props.src}
           alt={props.alt} />
         <Vinyl
-          src={LpSunset}
-          alt={NAME} />
+          src={props.img}
+          alt={NAME}
+          website={props.website}
+          github={props.github} />
       </div>
     </>
   );
