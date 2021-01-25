@@ -13,8 +13,9 @@ class Newspaper extends Component {
       lastPage: false,
     };
   }
-
+  
   componentDidMount = () => {
+    console.log(this.props);
     const { firstPage, lastPage } = this.props;
     if (firstPage || lastPage) {
       this.setState({
@@ -43,7 +44,7 @@ class Newspaper extends Component {
     return (
       <div
         id="newspaper-container"
-        className={`my-24 -top-${this.props.top} transform ${this.props.rotate} page-${this.props.pageNb}`}
+        className={`my-24 transform ${this.props.rotate} page-${this.props.pageNb}`}
       >
         <img src={Paper} alt="Vieux journal" />
         <Header />

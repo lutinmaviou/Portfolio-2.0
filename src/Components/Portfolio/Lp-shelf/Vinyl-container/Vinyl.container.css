@@ -1,3 +1,28 @@
 #lp-cover{
     position: absolute;
 }
+
+.lp-1{
+    top:3.5rem;
+    left:20rem;
+}
+
+.lp-2{
+    top:3.5rem;
+    left:60rem;
+}
+
+.lp-3{
+    top:18rem;
+    left:60rem;
+}
+
+.lp-4{
+    top:33rem;
+    left:24rem;
+}
+
+.lp-5{
+    top:33rem;
+    left:44rem;
+}

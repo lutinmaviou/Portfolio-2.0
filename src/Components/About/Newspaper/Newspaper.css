@@ -9,16 +9,24 @@
   animation: hinge 0.7s ease-in-out paused;
 }
 
+.page-2 {
+  top: -69rem;
+}
+
+.page-1 {
+  top: -138rem;
+}
+
 #buttons {
   position: relative;
 }
 
-#buttons:hover {
-  cursor: pointer;
-}
-
 #right-finger {
   margin-left: 66rem;
+}
+
+.right-finger, .left-finger{
+  cursor: pointer;
 }
 
 .right-finger {

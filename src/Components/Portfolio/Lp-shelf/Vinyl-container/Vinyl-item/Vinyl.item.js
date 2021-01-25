@@ -3,7 +3,6 @@ import Website from "./links/website";
 import "./Vinyl.item.css";
 
 const Vinyl = (props) => {
-  console.log(props);
   return (
     <>
       <div

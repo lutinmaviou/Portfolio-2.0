@@ -32,43 +32,40 @@ const LpShelf = () => {
         img={LpP1}
         website="https://p1.yourwebagency.fr/"
         github=""
+        lpNb="1"
       />
       <img src={Plant} alt="Plante" id="plant" />
       <VinylContainer
         src={P2}
         alt="Pochette vinyle projet 2 OpenClassrooms"
-        top="14"
-        left="60"
         img={LpP2}
         website="https://p2.yourwebagency.fr/"
         github=""
+        lpNb="2"
       />
       <VinylContainer
         src={P3}
         alt="Pochette vinyle projet 3 OpenClassrooms"
-        top="72"
-        left="60"
         img={LpP3}
         website="https://p3.yourwebagency.fr/"
         github=""
+        lpNb="3"
       />
       <VinylContainer
         src={P4}
         alt="Pochette vinyle projet 4 OpenClassrooms"
-        top="33"
-        left="96"
         img={LpP4}
         website="https://writerblog.yourwebagency.fr/"
         github={`${BASE_URL_GITHUB}writerBlog`}
+        lpNb="4"
       />
       <VinylContainer
         src={P5}
         alt="Pochette vinyle projet 5 OpenClassrooms"
-        top="33"
-        left="40"
         img={LpP5}
         website="https://webotek.yourwebagency.fr/"
         github={`${BASE_URL_GITHUB}webotek`}
+        lpNb="5"
       />
       <img src={Globe} alt="Mappemonde" id="globe"/>
       <img src={GoldenFrame} alt="Cadre mur des projets" id="frame"/>

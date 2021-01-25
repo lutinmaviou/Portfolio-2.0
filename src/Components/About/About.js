@@ -8,8 +8,8 @@ const About = () => {
       <VerticalPlane />
       <div className="flex flex-col">
         <Newspaper pageNb="3" rotate="-rotate-2" lastPage="true" />
-        <Newspaper pageNb="2" top="100" />
-        <Newspaper pageNb="1" top="200" rotate="rotate-2" firstPage="true" />
+        <Newspaper pageNb="2" />
+        <Newspaper pageNb="1" rotate="rotate-2" firstPage="true" />
       </div>
     </div>
   );
