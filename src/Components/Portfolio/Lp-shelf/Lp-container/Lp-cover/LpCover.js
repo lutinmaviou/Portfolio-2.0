@@ -1,6 +1,6 @@
-import "./Vinyl.cover.css";
+import "./LpCover.css";
 
-const Cover = (props) => {
+const LpCover = (props) => {
   return (
     <div className="z-10 cover">
       <img src={props.src} alt={props.alt} />
@@ -8,5 +8,5 @@ const Cover = (props) => {
   );
 };
 
-export default Cover;
+export default LpCover;
 

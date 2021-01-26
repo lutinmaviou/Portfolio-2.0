@@ -15,7 +15,6 @@ class Newspaper extends Component {
   }
   
   componentDidMount = () => {
-    console.log(this.props);
     const { firstPage, lastPage } = this.props;
     if (firstPage || lastPage) {
       this.setState({

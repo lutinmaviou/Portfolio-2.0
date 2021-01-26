@@ -8,7 +8,7 @@
   height: 800px;
 }
 
-#plant {
+#bonsai {
   position: absolute;
   top: 3.5rem;
   left: 41rem;
@@ -26,21 +26,50 @@
   left: 42.1rem;
 } */
 
-#candle{
-    position: absolute;
-    top: -14.5rem;
-    left: 65rem;
+#candle {
+  position: absolute;
+  top: -14.5rem;
+  left: 65rem;
 }
 
-#globe{
+#globe {
   position: absolute;
   top: 33rem;
   left: 62rem;
 }
 
-#frame{
+#frame {
   position: absolute;
   top: 17.5rem;
   left: 18rem;
   transform: rotateX(2deg);
+}
+
+#previous-icon,
+#next-icon {
+  cursor: pointer;
+  animation: scale 2s running infinite;
+}
+
+#next-icon {
+  position: absolute;
+  top: 21rem;
+  left: 85rem;
+}
+
+#previous-icon {
+  position: absolute;
+  top: 21rem;
+  left: 2rem;
+}
+
+.items {
+  z-index: 2;
+  animation: fall-down 0.8s cubic-bezier(0.9, -0.35, 1, 1) paused;
+}
+
+@keyframes fall-down {
+  100% {
+    transform: translateY(100rem);
+  }
 }

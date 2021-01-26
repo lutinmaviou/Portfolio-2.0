@@ -1,5 +1,6 @@
 #lp-cover{
     position: absolute;
+    z-index: 1;
 }
 
 .lp-1{

@@ -56,9 +56,7 @@ class Welcome extends Component {
               <LightSpeed left delay={1000}>
                 <h1 className="md:text-7xl lg:text-9xl xl:text-10xl">HELLO</h1>
               </LightSpeed>
-              <Fade delay={2000}>
                 <Presentation text="My name is Bertrand, I'm a Web and Mobile Developer" />
-              </Fade>
             </div>
             <div className="flex flex-col -mt-10">
               <Window />
@@ -77,24 +75,6 @@ class Welcome extends Component {
                   playShakeRadio={this.playShakeRadio}
                 />
               )}
-              {/* <div id="radio-wrapper" className="flex flex-col items-center">
-                <Radio />
-                {this.state.displayAudioPlayer === false ? (
-                  <>
-                    <span className="ironick text-4xl">
-                      Pour une navigation en musique :
-                    </span>
-                    <PlayButton
-                      handleDisplayAudioPlayer={this.handleDisplayAudioPlayer}
-                    />
-                  </>
-                ) : (
-                  <AudioPlayer
-                    pauseShakeradio={this.pauseShakeradio}
-                    playShakeradio={this.playShakeradio}
-                  />
-                )}
-              </div> */}
             </div>
           </div>
         </section>

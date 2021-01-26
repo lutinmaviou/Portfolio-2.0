@@ -1,8 +1,8 @@
 import Github from "./links/github";
 import Website from "./links/website";
-import "./Vinyl.item.css";
+import "./LpItem.css";
 
-const Vinyl = (props) => {
+const LpItem = (props) => {
   return (
     <>
       <div
@@ -17,4 +17,4 @@ const Vinyl = (props) => {
   );
 };
 
-export default Vinyl;
+export default LpItem;
