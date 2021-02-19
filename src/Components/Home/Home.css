@@ -1,0 +1,32 @@
+@media screen and (max-width: 1440px) {
+  h1 {
+    font-size: 6rem !important;
+    margin-top: -5rem;
+  }
+  #window {
+    width: 350px !important;
+    margin-right: 50px !important;
+  }
+
+  #radio {
+    width: 130px !important;
+  }
+
+  #music-frame {
+    width: 120px !important;
+    height: 100px !important;
+    margin-top: 0.7rem;
+  }
+
+  #shelf-items {
+    margin-top: -9rem !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #intro-text {
+    font-size: 2.5rem !important;
+    width: 300px !important;
+    text-align: center;
+  }
+}

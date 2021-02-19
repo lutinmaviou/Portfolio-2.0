@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+//import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "tailwindcss/tailwind.css";
 import "./App.css";
 import About from "./Components/About/About";
@@ -10,8 +11,8 @@ class App extends Component {
     return (
       <div>
         <Home />
-        <About />
-        <Portfolio />
+        {/* <About />
+        <Portfolio /> */}
       </div>
     );
   }

@@ -58,10 +58,10 @@ class Welcome extends Component {
               </LightSpeed>
                 <Presentation text="My name is Bertrand, I'm a Web and Mobile Developer" />
             </div>
-            <div className="flex flex-col -mt-10">
+            <div className="flex flex-col -mt-10" id="window">
               <Window />
               <Shelf />
-              <div className="flex justify-around -mt-56">
+              <div className="flex justify-around -mt-56" id="shelf-items">
                 <Radio />
                 <MusicFrame />
               </div>

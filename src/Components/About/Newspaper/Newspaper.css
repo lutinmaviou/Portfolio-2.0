@@ -9,12 +9,12 @@
   animation: hinge 0.7s ease-in-out paused;
 }
 
-.page-2 {
-  top: -69rem;
-}
-
 .page-1 {
   top: -138rem;
+}
+
+.page-2 {
+  top: -69rem;
 }
 
 #buttons {

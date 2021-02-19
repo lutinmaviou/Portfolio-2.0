@@ -6,10 +6,6 @@
   perspective: 1000px;
 }
 
-#radio:hover {
-  animation: shake 1s cubic-bezier(0.16, 0.01, 0.1, 0.5) both infinite;
-}
-
 @keyframes shake {
   10%,
   90% {
